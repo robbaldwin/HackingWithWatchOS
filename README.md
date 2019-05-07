@@ -1,3 +1,3 @@
 # Hacking with WatchOS
 
-## Projects created during the Hacking with WatchOS course
+Projects created during the Hacking with WatchOS course
