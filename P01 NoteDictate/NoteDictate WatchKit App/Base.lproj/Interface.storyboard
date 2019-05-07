@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoteDictate_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" pagingScroll="YES" id="hfy-oi-5c7">
+                            <items>
+                                <tableRow identifier="Row" id="5Zz-cr-nob" customClass="NoteSelectRow" customModule="NoteDictate_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="fil-dp-u9b">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="2" id="KPH-Mw-dt1"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="KPH-Mw-dt1" id="d3I-TZ-xkD"/>
+                                        <segue destination="9JC-0y-eVE" kind="push" id="dD9-kX-3BX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Add New Note" id="VsA-Wh-SHZ">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addNewNote" destination="AgC-eL-Hgc" id="q2K-OP-US9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Credits" id="vY8-18-AO0">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="isk-Hx-S2H" kind="push" id="EAg-x8-rW2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="hfy-oi-5c7" id="VMn-dQ-a7V"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-13" y="29"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="mdA-GJ-o88">
+            <objects>
+                <controller id="9JC-0y-eVE" customClass="DetailInterfaceController" customModule="NoteDictate_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="fs4-Yi-LQS"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="fs4-Yi-LQS" id="Ahv-wI-4sY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="287" y="29"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="dwA-GV-cRR">
+            <objects>
+                <controller id="isk-Hx-S2H">
+                    <items>
+                        <label alignment="center" textAlignment="center" numberOfLines="0" id="TOC-2g-Akm">
+                            <string key="text">Project 1
+Note Dictate
+
+Hacking with WatchOS</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-13" y="395"/>
+        </scene>
+    </scenes>
+</document>

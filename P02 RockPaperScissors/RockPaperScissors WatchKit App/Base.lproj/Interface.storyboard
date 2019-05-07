@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissors_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" hidden="YES" text="You win!" id="XHH-oq-2BH">
+                            <fontDescription key="font" type="system" pointSize="38"/>
+                        </label>
+                        <imageView width="0.5" height="0.5" alignment="center" id="bTw-Aa-Myz"/>
+                        <separator alignment="left" id="zUX-K0-0ht"/>
+                        <group width="1" height="0.33000000000000002" alignment="left" id="yWe-sq-kWp">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="500-ZK-YSu">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="button1Tapped" destination="AgC-eL-Hgc" id="DX5-M3-9vX"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="RSh-Tr-n7u">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="button2Tapped" destination="AgC-eL-Hgc" id="7G5-Wn-SRW"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="JjK-Ca-8Lu">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="button3Tapped" destination="AgC-eL-Hgc" id="j7s-3I-NcV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="0.90000000000000002" alignment="center" id="BUs-HJ-IIv">
+                            <items>
+                                <label alignment="left" text="1/20" id="380-1Z-oRj"/>
+                                <timer alignment="right" id="EFo-tr-zSg">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="answersGroup" destination="yWe-sq-kWp" id="DZo-AT-7Nl"/>
+                        <outlet property="button1" destination="500-ZK-YSu" id="Jtl-ho-MEt"/>
+                        <outlet property="button2" destination="RSh-Tr-n7u" id="cDr-cF-Yne"/>
+                        <outlet property="button3" destination="JjK-Ca-8Lu" id="U0H-Rr-ix1"/>
+                        <outlet property="levelCounterLabel" destination="380-1Z-oRj" id="YSP-gO-bEL"/>
+                        <outlet property="questionImage" destination="bTw-Aa-Myz" id="Ulg-Wg-mWA"/>
+                        <outlet property="resultLabel" destination="XHH-oq-2BH" id="Bsj-vp-73M"/>
+                        <outlet property="timer" destination="EFo-tr-zSg" id="s0r-53-ml4"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
