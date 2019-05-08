@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SafeCrack_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Safe Crack" id="oJE-80-aAg">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <slider width="1" alignment="left" continuous="YES" value="1" maximum="100" steps="100" id="Pwq-eZ-EiF">
+                            <connections>
+                                <action selector="sliderChanged:" destination="AgC-eL-Hgc" id="cwT-k2-ECa"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Next" id="ToS-W4-iEB">
+                            <connections>
+                                <action selector="nextTapped" destination="AgC-eL-Hgc" id="d7C-yZ-JpW"/>
+                            </connections>
+                        </button>
+                        <timer alignment="center" id="YLo-wX-4ov">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="nextButton" destination="ToS-W4-iEB" id="59c-8x-f8K"/>
+                        <outlet property="numbersLabel" destination="oJE-80-aAg" id="Mot-pp-ZPc"/>
+                        <outlet property="safeValue" destination="Pwq-eZ-EiF" id="5a0-RS-yxf"/>
+                        <outlet property="timer" destination="YLo-wX-4ov" id="GcM-5z-zI5"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
