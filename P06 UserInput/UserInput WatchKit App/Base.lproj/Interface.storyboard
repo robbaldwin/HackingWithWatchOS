@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="UserInput_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.25" alignment="left" title="Dictation" id="svd-Dt-lvq">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="dictateTapped" destination="AgC-eL-Hgc" id="UaZ-yi-94a"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.25" alignment="left" title="Multi Input" id="Mr5-YD-tSd">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="multiInputTapped" destination="AgC-eL-Hgc" id="znS-5a-PzR"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.25" alignment="left" title="Recording" id="Wgr-tI-fZ1">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="recordingTapped" destination="AgC-eL-Hgc" id="YsG-w5-FEW"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="0.25" alignment="center" verticalAlignment="center" textAlignment="center" id="dkg-YH-FYb"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="dkg-YH-FYb" id="MAY-gI-Ne5"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

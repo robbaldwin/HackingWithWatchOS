@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HueKnows_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="ALz-cP-WpL">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="gdD-12-Dg1">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="topLeftButtonTapped" destination="AgC-eL-Hgc" id="XJS-7h-sLc"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="RtR-mi-c3u">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="topRightButtonTapped" destination="AgC-eL-Hgc" id="4AL-aJ-pXJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="7T6-Vv-WqK">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="toA-mV-4Oa">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="btmLeftButtonTapped" destination="AgC-eL-Hgc" id="HNJ-a4-uzh"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="5HZ-X1-wUM">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="btmRightButtonTapped" destination="AgC-eL-Hgc" id="sT8-7P-ozo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="bcg-dB-JRL">
+                        <items>
+                            <menuItem title="Restart" icon="resume" id="esa-Si-d9i">
+                                <connections>
+                                    <action selector="startNewGame" destination="AgC-eL-Hgc" id="bgQ-cs-lKP"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="btmLeftButton" destination="toA-mV-4Oa" id="8L9-sh-cZd"/>
+                        <outlet property="btmRightButton" destination="5HZ-X1-wUM" id="evs-qb-0zp"/>
+                        <outlet property="topLeftButton" destination="gdD-12-Dg1" id="3Ii-Da-vbv"/>
+                        <outlet property="topRightButton" destination="RtR-mi-c3u" id="yT9-EJ-WL6"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
