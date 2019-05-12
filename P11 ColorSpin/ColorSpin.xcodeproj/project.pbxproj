@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B70405C2284BDB3000F2CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70405B2284BDB3000F2CE7 /* AppDelegate.swift */; };
+		9B70405E2284BDB3000F2CE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70405D2284BDB3000F2CE7 /* ViewController.swift */; };
+		9B7040612284BDB3000F2CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B70405F2284BDB3000F2CE7 /* Main.storyboard */; };
+		9B7040632284BDB4000F2CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7040622284BDB4000F2CE7 /* Assets.xcassets */; };
+		9B7040662284BDB4000F2CE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7040642284BDB4000F2CE7 /* LaunchScreen.storyboard */; };
+		9B70406B2284BDB4000F2CE7 /* ColorSpin WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9B70406A2284BDB4000F2CE7 /* ColorSpin WatchKit App.app */; };
+		9B7040712284BDB4000F2CE7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B70406F2284BDB4000F2CE7 /* Interface.storyboard */; };
+		9B7040732284BDB5000F2CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7040722284BDB5000F2CE7 /* Assets.xcassets */; };
+		9B70407A2284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B7040792284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B70407F2284BDB5000F2CE7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70407E2284BDB5000F2CE7 /* InterfaceController.swift */; };
+		9B7040812284BDB5000F2CE7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7040802284BDB5000F2CE7 /* ExtensionDelegate.swift */; };
+		9B7040832284BDB5000F2CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7040822284BDB5000F2CE7 /* Assets.xcassets */; };
+		9B7040932284BF24000F2CE7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7040922284BF24000F2CE7 /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B70406C2284BDB4000F2CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B7040502284BDB3000F2CE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B7040692284BDB4000F2CE7;
+			remoteInfo = "ColorSpin WatchKit App";
+		};
+		9B70407B2284BDB5000F2CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B7040502284BDB3000F2CE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B7040782284BDB5000F2CE7;
+			remoteInfo = "ColorSpin WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B70408A2284BDB5000F2CE7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9B70407A2284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B70408E2284BDB5000F2CE7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9B70406B2284BDB4000F2CE7 /* ColorSpin WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B7040582284BDB3000F2CE7 /* ColorSpin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSpin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B70405B2284BDB3000F2CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B70405D2284BDB3000F2CE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B7040602284BDB3000F2CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B7040622284BDB4000F2CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B7040652284BDB4000F2CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B7040672284BDB4000F2CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B70406A2284BDB4000F2CE7 /* ColorSpin WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorSpin WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7040702284BDB4000F2CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9B7040722284BDB5000F2CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B7040742284BDB5000F2CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7040792284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorSpin WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B70407E2284BDB5000F2CE7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9B7040802284BDB5000F2CE7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9B7040822284BDB5000F2CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B7040842284BDB5000F2CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7040922284BF24000F2CE7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B7040552284BDB3000F2CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7040762284BDB5000F2CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B70404F2284BDB3000F2CE7 = {
+			isa = PBXGroup;
+			children = (
+				9B70405A2284BDB3000F2CE7 /* ColorSpin */,
+				9B70406E2284BDB4000F2CE7 /* ColorSpin WatchKit App */,
+				9B70407D2284BDB5000F2CE7 /* ColorSpin WatchKit Extension */,
+				9B7040592284BDB3000F2CE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B7040592284BDB3000F2CE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B7040582284BDB3000F2CE7 /* ColorSpin.app */,
+				9B70406A2284BDB4000F2CE7 /* ColorSpin WatchKit App.app */,
+				9B7040792284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B70405A2284BDB3000F2CE7 /* ColorSpin */ = {
+			isa = PBXGroup;
+			children = (
+				9B70405B2284BDB3000F2CE7 /* AppDelegate.swift */,
+				9B70405D2284BDB3000F2CE7 /* ViewController.swift */,
+				9B70405F2284BDB3000F2CE7 /* Main.storyboard */,
+				9B7040622284BDB4000F2CE7 /* Assets.xcassets */,
+				9B7040642284BDB4000F2CE7 /* LaunchScreen.storyboard */,
+				9B7040672284BDB4000F2CE7 /* Info.plist */,
+			);
+			path = ColorSpin;
+			sourceTree = "<group>";
+		};
+		9B70406E2284BDB4000F2CE7 /* ColorSpin WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9B70406F2284BDB4000F2CE7 /* Interface.storyboard */,
+				9B7040722284BDB5000F2CE7 /* Assets.xcassets */,
+				9B7040742284BDB5000F2CE7 /* Info.plist */,
+			);
+			path = "ColorSpin WatchKit App";
+			sourceTree = "<group>";
+		};
+		9B70407D2284BDB5000F2CE7 /* ColorSpin WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B70407E2284BDB5000F2CE7 /* InterfaceController.swift */,
+				9B7040922284BF24000F2CE7 /* GameScene.swift */,
+				9B7040802284BDB5000F2CE7 /* ExtensionDelegate.swift */,
+				9B7040822284BDB5000F2CE7 /* Assets.xcassets */,
+				9B7040842284BDB5000F2CE7 /* Info.plist */,
+			);
+			path = "ColorSpin WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B7040572284BDB3000F2CE7 /* ColorSpin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B70408F2284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin" */;
+			buildPhases = (
+				9B7040542284BDB3000F2CE7 /* Sources */,
+				9B7040552284BDB3000F2CE7 /* Frameworks */,
+				9B7040562284BDB3000F2CE7 /* Resources */,
+				9B70408E2284BDB5000F2CE7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B70406D2284BDB4000F2CE7 /* PBXTargetDependency */,
+			);
+			name = ColorSpin;
+			productName = ColorSpin;
+			productReference = 9B7040582284BDB3000F2CE7 /* ColorSpin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B7040692284BDB4000F2CE7 /* ColorSpin WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B70408B2284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin WatchKit App" */;
+			buildPhases = (
+				9B7040682284BDB4000F2CE7 /* Resources */,
+				9B70408A2284BDB5000F2CE7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B70407C2284BDB5000F2CE7 /* PBXTargetDependency */,
+			);
+			name = "ColorSpin WatchKit App";
+			productName = "ColorSpin WatchKit App";
+			productReference = 9B70406A2284BDB4000F2CE7 /* ColorSpin WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9B7040782284BDB5000F2CE7 /* ColorSpin WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B7040872284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin WatchKit Extension" */;
+			buildPhases = (
+				9B7040752284BDB5000F2CE7 /* Sources */,
+				9B7040762284BDB5000F2CE7 /* Frameworks */,
+				9B7040772284BDB5000F2CE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorSpin WatchKit Extension";
+			productName = "ColorSpin WatchKit Extension";
+			productReference = 9B7040792284BDB5000F2CE7 /* ColorSpin WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B7040502284BDB3000F2CE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Rob Baldwin";
+				TargetAttributes = {
+					9B7040572284BDB3000F2CE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9B7040692284BDB4000F2CE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9B7040782284BDB5000F2CE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B7040532284BDB3000F2CE7 /* Build configuration list for PBXProject "ColorSpin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B70404F2284BDB3000F2CE7;
+			productRefGroup = 9B7040592284BDB3000F2CE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B7040572284BDB3000F2CE7 /* ColorSpin */,
+				9B7040692284BDB4000F2CE7 /* ColorSpin WatchKit App */,
+				9B7040782284BDB5000F2CE7 /* ColorSpin WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B7040562284BDB3000F2CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7040662284BDB4000F2CE7 /* LaunchScreen.storyboard in Resources */,
+				9B7040632284BDB4000F2CE7 /* Assets.xcassets in Resources */,
+				9B7040612284BDB3000F2CE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7040682284BDB4000F2CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7040732284BDB5000F2CE7 /* Assets.xcassets in Resources */,
+				9B7040712284BDB4000F2CE7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7040772284BDB5000F2CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7040832284BDB5000F2CE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B7040542284BDB3000F2CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B70405E2284BDB3000F2CE7 /* ViewController.swift in Sources */,
+				9B70405C2284BDB3000F2CE7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7040752284BDB5000F2CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7040932284BF24000F2CE7 /* GameScene.swift in Sources */,
+				9B7040812284BDB5000F2CE7 /* ExtensionDelegate.swift in Sources */,
+				9B70407F2284BDB5000F2CE7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B70406D2284BDB4000F2CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B7040692284BDB4000F2CE7 /* ColorSpin WatchKit App */;
+			targetProxy = 9B70406C2284BDB4000F2CE7 /* PBXContainerItemProxy */;
+		};
+		9B70407C2284BDB5000F2CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B7040782284BDB5000F2CE7 /* ColorSpin WatchKit Extension */;
+			targetProxy = 9B70407B2284BDB5000F2CE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B70405F2284BDB3000F2CE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7040602284BDB3000F2CE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B7040642284BDB4000F2CE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7040652284BDB4000F2CE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9B70406F2284BDB4000F2CE7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B7040702284BDB4000F2CE7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B7040852284BDB5000F2CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B7040862284BDB5000F2CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B7040882284BDB5000F2CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				INFOPLIST_FILE = "ColorSpin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		9B7040892284BDB5000F2CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				INFOPLIST_FILE = "ColorSpin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		9B70408C2284BDB5000F2CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				IBSC_MODULE = ColorSpin_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorSpin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		9B70408D2284BDB5000F2CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				IBSC_MODULE = ColorSpin_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorSpin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		9B7040902284BDB5000F2CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				INFOPLIST_FILE = ColorSpin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B7040912284BDB5000F2CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47UHAV43Z9;
+				INFOPLIST_FILE = ColorSpin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robbaldwin.ColorSpin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B7040532284BDB3000F2CE7 /* Build configuration list for PBXProject "ColorSpin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7040852284BDB5000F2CE7 /* Debug */,
+				9B7040862284BDB5000F2CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B7040872284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7040882284BDB5000F2CE7 /* Debug */,
+				9B7040892284BDB5000F2CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B70408B2284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B70408C2284BDB5000F2CE7 /* Debug */,
+				9B70408D2284BDB5000F2CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B70408F2284BDB5000F2CE7 /* Build configuration list for PBXNativeTarget "ColorSpin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B7040902284BDB5000F2CE7 /* Debug */,
+				9B7040912284BDB5000F2CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B7040502284BDB3000F2CE7 /* Project object */;
+}

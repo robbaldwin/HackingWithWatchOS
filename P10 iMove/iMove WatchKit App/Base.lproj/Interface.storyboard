@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iMove_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label height="0.25" alignment="center" text="Activity Type" id="OhT-4Q-WhO"/>
+                        <picker height="0.5" alignment="left" id="GdM-vn-x1J">
+                            <connections>
+                                <action selector="activityTypePickerChanged:" destination="AgC-eL-Hgc" id="Fz5-gn-hue"/>
+                            </connections>
+                        </picker>
+                        <button width="1" height="0.25" alignment="left" title="Start Workout" id="vf5-47-SZp">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="startWorkoutButtonTapped" destination="AgC-eL-Hgc" id="Cvo-3S-Aae"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="activityTypePicker" destination="GdM-vn-x1J" id="4j5-1v-gfp"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--WorkoutInterfaceController-->
+        <scene sceneID="fZs-VS-Lcf">
+            <objects>
+                <controller identifier="WorkoutInterfaceController" id="i9H-HD-nFt" customClass="WorkoutInterfaceController" customModule="iMove_WatchKit_Extension">
+                    <items>
+                        <button alignment="left" id="gRs-QC-djM">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" spacing="0.0" id="vZP-e3-lfC">
+                                <items>
+                                    <label alignment="center" text="0.00" id="a3i-y9-nAG">
+                                        <fontDescription key="font" type="system" pointSize="48"/>
+                                    </label>
+                                    <label alignment="center" text="KILOMETERS" id="EnT-Ta-6pO">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </label>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="changeDisplayMode" destination="i9H-HD-nFt" id="nDa-N2-Yrn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="uNq-iq-XMs">
+                            <color key="backgroundColor" red="0.94275027513504028" green="0.43021343899659692" blue="0.026335785215171922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="stopWorkoutTapped" destination="i9H-HD-nFt" id="Kmx-SB-j2F"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" hidden="YES" title="Resume" id="utR-Hu-rSm">
+                            <color key="backgroundColor" red="0.066134993730681144" green="0.45375401931365733" blue="0.00021811952388227761" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="resumeWorkoutTapped" destination="i9H-HD-nFt" id="QCc-HC-FeH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" hidden="YES" title="End" id="rQO-s6-wHu">
+                            <color key="backgroundColor" red="0.91921168565750122" green="0.0" blue="0.18169412595487067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="endWorkoutTapped" destination="i9H-HD-nFt" id="TlA-PU-e5k"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="endButton" destination="rQO-s6-wHu" id="LfY-wD-cIu"/>
+                        <outlet property="quantityLabel" destination="a3i-y9-nAG" id="ASN-Aj-4ts"/>
+                        <outlet property="resumeButton" destination="utR-Hu-rSm" id="4lf-hD-niW"/>
+                        <outlet property="stopButton" destination="uNq-iq-XMs" id="IFf-rw-zva"/>
+                        <outlet property="unitLabel" destination="EnT-Ta-6pO" id="4LW-pq-Aku"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="29"/>
+        </scene>
+    </scenes>
+</document>
